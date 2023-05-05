@@ -2,7 +2,7 @@ package com.example.bootcamp_workshop.repository.key;
 
 import com.example.bootcamp_workshop.model.Invoice;
 import com.example.bootcamp_workshop.model.Product;
-import jakarta.persistence.Column;
+import javax.persistence.Column;
 
 import java.io.Serializable;
 import java.util.Objects;

@@ -1,7 +1,7 @@
 package com.example.bootcamp_workshop.model;
 
 import com.example.bootcamp_workshop.repository.key.InvoiceDetailsId;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "invoice_details")

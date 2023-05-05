@@ -1,6 +1,6 @@
 package com.example.bootcamp_workshop.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "product")
