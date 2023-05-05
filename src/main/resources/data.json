@@ -1,0 +1,118 @@
+{
+  "customer": [
+    {
+      "customer_id": 1,
+      "full_name": "John Doe",
+      "address": "123 Main St",
+      "email": "johndoe@email.com",
+      "phone_number": "555-123-4567"
+    },
+    {
+      "customer_id": 2,
+      "full_name": "Jane Smith",
+      "address": "456 Maple Ave",
+      "email": "janesmith@email.com",
+      "phone_number": "555-234-5678"
+    },
+    {
+      "customer_id": 3,
+      "full_name": "Bob Johnson",
+      "address": "789 Oak Blvd",
+      "email": "bobjohnson@email.com",
+      "phone_number": "555-345-6789"
+    }
+  ],
+  "product": [
+    {
+      "product_id": 1,
+      "product_name": "T-shirt",
+      "price": 19.99,
+      "tax_percentage": 0.05
+    },
+    {
+      "product_id": 2,
+      "product_name": "Hoodie",
+      "price": 39.99,
+      "tax_percentage": 0.05
+    },
+    {
+      "product_id": 3,
+      "product_name": "Jeans",
+      "price": 49.99,
+      "tax_percentage": 0.10
+    },
+    {
+      "product_id": 4,
+      "product_name": "Sneakers",
+      "price": 79.99,
+      "tax_percentage": 0.10
+    }
+  ],
+  "invoice": [
+    {
+      "invoice_id": 1,
+      "customer_id": 1,
+      "invoice_date": "2022-01-01",
+      "total_price": 159.92
+    },
+    {
+      "invoice_id": 2,
+      "customer_id": 2,
+      "invoice_date": "2022-02-15",
+      "total_price": 79.98
+    },
+    {
+      "invoice_id": 3,
+      "customer_id": 3,
+      "invoice_date": "2022-03-31",
+      "total_price": 229.93
+    }
+  ],
+  "invoice_details": [
+    {
+      "invoice_id": 1,
+      "product_id": 1,
+      "quantity": 2
+    },
+    {
+      "invoice_id": 1,
+      "product_id": 2,
+      "quantity": 1
+    },
+    {
+      "invoice_id": 1,
+      "product_id": 3,
+      "quantity": 2
+    },
+    {
+      "invoice_id": 2,
+      "product_id": 1,
+      "quantity": 1
+    },
+    {
+      "invoice_id": 2,
+      "product_id": 4,
+      "quantity": 1
+    },
+    {
+      "invoice_id": 3,
+      "product_id": 1,
+      "quantity": 3
+    },
+    {
+      "invoice_id": 3,
+      "product_id": 2,
+      "quantity": 2
+    },
+    {
+      "invoice_id": 3,
+      "product_id": 3,
+      "quantity": 1
+    },
+    {
+      "invoice_id": 3,
+      "product_id": 4,
+      "quantity": 1
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 package com.example.bootcamp_workshop.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 
 @Entity
@@ -8,18 +10,23 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonProperty(value = "customer_id")
     private int customerId;
 
     @Column(nullable = false)
+    @JsonProperty(value = "full_name")
     private String fullName;
 
     @Column(nullable = false)
+    @JsonProperty(value = "address")
     private String address;
 
     @Column(nullable = false)
+    @JsonProperty(value = "email")
     private String email;
 
     @Column(nullable = false)
+    @JsonProperty(value = "phone_number")
     private String phoneNumber;
 
     public Customer(String fullName, String address, String email, String phoneNumber) {
@@ -70,5 +77,16 @@ public class Customer {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerId=" + customerId +
+                ", fullName='" + fullName + '\'' +
+                ", address='" + address + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
     }
 }
